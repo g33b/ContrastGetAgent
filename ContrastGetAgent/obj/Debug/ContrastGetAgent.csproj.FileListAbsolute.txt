@@ -1,0 +1,8 @@
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\bin\Debug\ContrastGetAgent.exe
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\bin\Debug\ContrastGetAgent.pdb
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\bin\Debug\RestSharp.dll
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\bin\Debug\RestSharp.xml
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\obj\Debug\ContrastGetAgent.csprojResolveAssemblyReference.cache
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\obj\Debug\ContrastGetAgent.exe
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\obj\Debug\ContrastGetAgent.pdb
+c:\users\mgibeau\documents\visual studio 2015\Projects\ContrastGetAgent\ContrastGetAgent\bin\Debug\config.txt
