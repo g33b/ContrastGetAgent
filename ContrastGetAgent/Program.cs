@@ -12,13 +12,13 @@ namespace ContrastGetAgent
         public static String ProfileUID = "";
         public static String Authorization = "";
         public static String API_Key = "";
-
+        public static String URL = "";
         static void Main(string[] args)
         {
             LoadConfig(args[0]);
 
             //Java client
-            RestClient client = new RestClient(@"https://app.contrastsecurity.com/Contrast/api/ng/"+ProfileUID+@"/agents/default/java");
+            RestClient client = new RestClient(URL+ProfileUID+@"/agents/default/java");
             RestRequest request = new RestRequest(Method.GET);
             request.AddHeader(@"Accept", @"application/java-archive");
             request.AddHeader(@"API-Key", API_Key);
@@ -27,7 +27,7 @@ namespace ContrastGetAgent
             ByteArrayToFile("contrast.jar", data);
 
             //dotnet client
-            client = new RestClient(@"https://app.contrastsecurity.com/Contrast/api/ng/" + ProfileUID + @"/agents/default/dotnet");
+            client = new RestClient(URL + ProfileUID + @"/agents/default/dotnet");
             request = new RestRequest(Method.GET);
             request.AddHeader(@"Accept", @"application/java-archive");
             request.AddHeader(@"API-Key", API_Key);
@@ -59,6 +59,10 @@ namespace ContrastGetAgent
                     if (line.ToLower().StartsWith("profile"))
                     {
                         ProfileUID = line.Split('|')[1];
+                    }
+                    if (line.ToLower().StartsWith("url"))
+                    {
+                        URL = line.Split('|')[1];
                     }
                 }
 
